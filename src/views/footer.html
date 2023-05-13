@@ -1,41 +1,43 @@
-<footer class="o-footer {{ subclass }} mt-auto pt-5">
-  <hr class="w-75 mx-auto">
-  <div class="row">
-    <div class="col-xs-12 col-md-2 mb-2"><img class="mx-auto d-block" src="assets/images/logo.svg"
+<footer class="{{ subclass }} mt-auto pt-5">
+  <hr class="w-3/4 mx-auto">
+  <div class="flex flex-col md:flex-row mt-2">
+    <div class="basis-full md:basis-2/12 mb-2"><img class="mx-auto d-block w-[50px]" src="assets/images/logo.svg"
         alt="I Love Chess - Logo">
     </div>
-    <div class="col-xs-12 col-md-8">
-      <div class="row">
-        <ul class="col nav justify-content-between">
-          <li class="nav-item"><a href="index.html" class="nav-link">Front Page</a></li>
-          <li class="nav-item"><a href="two.html" class="nav-link">Club Members</a></li>
-          <li class="nav-item"><a href="three.html" class="nav-link">Club Information</a></li>
-          <li class="nav-item"><a class="nav-link" href="carousel.html">Photo Gallery</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="book.html">Book a Game</a>
-          </li>
-          <li class="nav-item"><a href="play.html" class="nav-link">Play a Game</a></li>
-        </ul>
-      </div>
+    <div class="basis-full md:basis-8/12">
+      <ul class="grid grid-cols-3 justify-items-stretch">
+        <li class=""><a href="index.html" class="no-underline hover:text-blue-400">Front Page</a></li>
+        <li class="nav-item"><a href="two.html" class="no-underline hover:text-blue-400">Club Members</a></li>
+        <li class="nav-item"><a href="three.html" class="no-underline hover:text-blue-400">Club Information</a></li>
+        <li class="nav-item"><a class="no-underline hover:text-blue-400" href="carousel.html">Photo Gallery</a>
+        </li>
+        <li class="nav-item"><a class="no-underline hover:text-blue-400" href="book.html">Book a Game</a>
+        </li>
+        <li class="nav-item"><a href="play.html" class="no-underline hover:text-blue-400">Play a Game</a></li>
+      </ul>
     </div>
-    <div class="col-xs-12 col-md-2">
-      <ul class="o-footer__social nav justify-content-center">
-        <li class="nav-item">
+    <div class="basis-full md:basis-2/12">
+      <ul class="grid grid-cols-2 gap-x-2">
+        <li class="justify-self-end">
           <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-plus-g"></i></a>
         </li>
-        <li class="nav-item"><a href="#" target="_blank" rel="noopener noreferrer"><i
+        <li class="justify-self-start"><a href="#" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-facebook-f"></i></a></li>
-        <li class="nav-item"><a href="#" target="_blank" rel="noopener noreferrer"><i
+        <li class="justify-self-end"><a href="#" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-twitter"></i></a></li>
-        <li class="nav-item"><a href="#" target="_blank" rel="noopener noreferrer"><i
+        <li class="justify-self-start"><a href="#" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-github"></i></a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="o-footer__copy row text-center text-md-start">
-    <img class="col-xs-12 col-md-3 px-4 pt-2 mx-auto" src="assets/images/uoc_masterbrand_2linies_blanc.png" alt="Logo">
-    <p class="col-xs-12 col-md-9 px-4 pt-4 text-center text-md-end">&copy; 2023 - Francisco Miguel Biete
+  <div class="flex flex-col md:flex-row text-center md:text-start bg-background_dark text-white py-2">
+    <img class="basis-full md:basis-3/12 px-4 mx-auto w-[300px]" src="assets/images/uoc_masterbrand_2linies_blanc.png"
+      alt="Logo">
+    <p class="basis-full md:basis-9/12 px-4 pt-4 text-center md:text-end place-self-start md:place-self-end font-bold">
+      &copy; 2023
+      - Francisco
+      Miguel Biete
       Bañón
     </p>
   </div>
