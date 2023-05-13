@@ -6,90 +6,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>M4.258 Herramientas HTML y CSS II - PEC2</title>
+  <title>M4.258 Herramientas HTML y CSS II - PEC3</title>
 </head>
 
 <body>
   <include src="./views/header.html"></include>
   <main class="w-2/3 mx-auto">
     <h1 class="font-caveat text-9xl text-center my-10">Club Photo Gallery</h1>
-    <div id="carouselClub" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <figure class="figure w-100 text-center">
+
+    <div class="flex justify-content align-center">
+      <div class="carousel w-full h-[450px]">
+        <input type="radio" name="carousel" id="card-1" class="hidden" onclick="updateCarouselClasses(this);" checked>
+        <input type="radio" name="carousel" id="card-2" class="hidden" onclick="updateCarouselClasses(this);">
+        <input type="radio" name="carousel" id="card-3" class="hidden" onclick="updateCarouselClasses(this);">
+        <input type="radio" name="carousel" id="card-4" class="hidden" onclick="updateCarouselClasses(this);">
+        <input type="radio" name="carousel" id="card-5" class="hidden" onclick="updateCarouselClasses(this);">
+        <input type="radio" name="carousel" id="card-6" class="hidden" onclick="updateCarouselClasses(this);">
+        <div class="w-full text-center font-semibold bg-white rounded-lg py-5">
+          <label class="" id="card-info">Chess Pieces - 1927</label>
+        </div>
+        <div class="cards mt-5">
+          <label for="card-1" class="card card-active">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/600-history02.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-history02.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/600-history02.jpg" alt="Chess Pieces - 1927">
+              <img class="rounded" src="assets/images/600-history02.jpg" alt="Chess Pieces - 1927">
             </picture>
-            <figcaption class="figure-caption">Chess Pieces - 1927</figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <figure class="figure w-100 text-center">
+
+          </label>
+          <label for="card-2" class="card card-right">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/600-history01.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-history01.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/600-history01.jpg"
-                alt="Community Event - Live Chess - 1942">
+              <img class="rounded" src="assets/images/600-history01.jpg" alt="Community Event - Live Chess - 1942"
+                loading="lazy">
             </picture>
-            <figcaption class="figure-caption">Community Event - Live Chess - 1942</figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="figure w-100 text-center">
+          </label>
+          <label for="card-3" class="card card-inactive">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/800-history03.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-history03.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/800-history03.jpg" alt="Chess Event - 1985">
+              <img class="rounded" src="assets/images/800-history03.jpg" alt="Chess Event - 1985" loading="lazy">
             </picture>
-            <figcaption class="figure-caption">Chess Event - 1985</figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="figure w-100 text-center">
+          </label>
+          <label for="card-4" class="card card-inactive">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/800-history04.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-history04.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/800-history04.jpg"
-                alt="Carnival Game - February 2015">
+              <img class="rounded" src="assets/images/800-history04.jpg" alt="Carnival Game - February 2015"
+                loading="lazy">
             </picture>
-            <figcaption class="figure-caption">Carnival Game - February 2015</figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="figure w-100 text-center">
+            </picture>
+          </label>
+          <label for="card-5" class="card card-inactive">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/800-lessons01.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-lessons01.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/800-lessons01.jpg" alt="Chess Lessons">
+              <img class="rounded" src="assets/images/800-lessons01.jpg" alt="Chess Lessons" loading="lazy">
             </picture>
-            <figcaption class="figure-caption">Chess Lessons</figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="figure w-100 text-center">
+          </label>
+          <label for="card-6" class="card card-left">
             <picture>
               <source media="(min-width: 640px)" srcset="assets/images/800-lessons02.jpg?as=webp" type="image/webp">
               <source media="(min-width: 320px)" srcset="assets/images/400-lessons02.jpg?as=webp" type="image/webp">
-              <img class="figure-img img-fluid" src="assets/images/800-lessons02.jpg" alt="Children Lessons">
+              <img class="rounded" src="assets/images/800-lessons02.jpg" alt="Children Lessons">
             </picture>
-            <figcaption class="figure-caption">Children Lessons</figcaption>
-          </figure>
+          </label>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselClub" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselClub" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </main>
   <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <script src="./assets/scripts/layouts/carousel/carousel.js"></script>
+  <script>autoplayCarousel(5000);</script>
 </body>
 
 </html>
