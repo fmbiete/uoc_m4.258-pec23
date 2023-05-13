@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>M4.258 Herramientas HTML y CSS II - PEC2</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main class="w-75 mx-auto">
+    <h1 class="display-1 text-center mb-5">Club Photo Gallery</h1>
+    <div id="carouselClub" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/600-history02.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-history02.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/600-history02.jpg" alt="Chess Pieces - 1927">
+            </picture>
+            <figcaption class="figure-caption">Chess Pieces - 1927</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/600-history01.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-history01.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/600-history01.jpg"
+                alt="Community Event - Live Chess - 1942">
+            </picture>
+            <figcaption class="figure-caption">Community Event - Live Chess - 1942</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/800-history03.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-history03.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/800-history03.jpg" alt="Chess Event - 1985">
+            </picture>
+            <figcaption class="figure-caption">Chess Event - 1985</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/800-history04.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-history04.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/800-history04.jpg"
+                alt="Carnival Game - February 2015">
+            </picture>
+            <figcaption class="figure-caption">Carnival Game - February 2015</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/800-lessons01.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-lessons01.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/800-lessons01.jpg" alt="Chess Lessons">
+            </picture>
+            <figcaption class="figure-caption">Chess Lessons</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="figure w-100 text-center">
+            <picture>
+              <source media="(min-width: 640px)" srcset="assets/images/800-lessons02.jpg?as=webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/images/400-lessons02.jpg?as=webp" type="image/webp">
+              <img class="figure-img img-fluid" src="assets/images/800-lessons02.jpg" alt="Children Lessons">
+            </picture>
+            <figcaption class="figure-caption">Children Lessons</figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselClub" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselClub" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

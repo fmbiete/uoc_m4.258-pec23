@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>M4.258 Herramientas HTML y CSS II - PEC3</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main class="w-3/4 mx-auto">
+    <h1 class="font-caveat my-5 text-center mb-4 text-4xl md:text-6xl font-bold leading-none">
+      Chess Club Members</h1>
+
+    <div class="flex flex-column md:flex-row gap-16 my-10">
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member One", "img_sm": "150-member01.jpg", "img_md": "400-member01.jpg", "img_position":
+        "object-top", "member_title": "Member
+        One", "member_text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+        "member_elo": "National Master"}
+      </include>
+
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member Two", "img_sm": "150-member02.jpg", "img_md": "400-member02.jpg", "img_position":
+        "object-[center_center]", "member_title": "Member
+        Two", "member_text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+        "member_elo": "Expert/National Candidate Master"}
+      </include>
+
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member Three", "img_sm": "150-member03.jpg", "img_md": "400-member03.jpg", "img_position":
+        "object-top", "member_title": "Member Three", "member_text": "Far far away, behind the word mountains, far from
+        the countries Vokalia and
+        Consonantia",
+        "member_elo": "Class A"}
+      </include>
+    </div>
+
+    <div class="flex flex-column md:flex-row gap-16 my-10">
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member Four", "img_sm": "150-member04.jpg", "img_md": "300-member04.jpg", "img_position":
+        "object-top", "member_title": "Member
+        Four", "member_text": "Far far away, behind the word mountains, far from the countries Vokalia and
+        Consonantia",
+        "member_elo": "Class B"}
+      </include>
+
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member Five", "img_sm": "150-member05.jpg", "img_md": "267-member05.jpg", "img_position":
+        "object-[center_center]", "member_title": "Member
+        Five", "member_text": "Far far away, behind the word mountains, far from the countries Vokalia and
+        Consonantia",
+        "member_elo": "Class B"}
+      </include>
+
+      <!-- Member -->
+      <include src="components/member.html">
+        { "img_alt": "Member Siz", "img_sm": "150-member06.jpg", "img_md": "400-member06.jpg", "img_position":
+        "object-top", "member_title": "Member
+        Six", "member_text": "Far far away, behind the word mountains, far from the countries Vokalia and
+        Consonantia",
+        "member_elo": "Class B"}
+      </include>
+    </div>
+
+    <div class="mt-5 text-center">
+      <p class="text-gray-400">Only members with a rating higher than 1600 are listed in this page.</p>
+      <p class="text-5xl my-5">Keep playing your best and you will soon be here!</p>
+
+      <figure class="mt-12">
+        <svg aria-hidden="true" class="w-12 h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+            fill="currentColor" />
+        </svg>
+        <blockquote>
+          <p class="text-2xl italic font-medium text-gray-500">The great thing about chess is it's a
+            game for oneself. You don't work on what you can't control, you just
+            work on yourself. And I think if more people did that, we'd all be a lot better off.</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+          <div class="flex items-center divide-x-2 divide-gray-500">
+            <cite class="pr-3 font-medium text-gray-900">Daniel Naroditsky</cite>
+            <cite class="pl-3 text-sm text-gray-500">American Chess Master</cite>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

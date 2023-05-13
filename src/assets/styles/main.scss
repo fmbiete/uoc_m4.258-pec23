@@ -21,15 +21,16 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+ @import "npm:@fortawesome/fontawesome-free/css/all.css";
+ @import "vanillajs-datepicker/sass/datepicker";
+ @import "cm-chessboard/assets/chessboard";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "layouts/shared";
 
 
 /**

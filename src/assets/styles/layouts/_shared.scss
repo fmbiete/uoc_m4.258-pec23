@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  # Page - Shared
+\*------------------------------------*/
+
+// ITCSS - Generic - Generic styles
+@import "shared/generics";
+
+
+// ITCSS - Elements - Styles for some tags
+
+
+// ITCSS - Objects
+@import "shared/objects/fonts";
+
+
+// ITCSS - Components in the pages
+@import 'shared/components/header';
+@import 'shared/components/footer';
+
+
+// ITCSS - Utilities

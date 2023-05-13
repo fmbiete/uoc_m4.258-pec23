@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <title>M4.258 Herramientas HTML y CSS II - PEC2</title>
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <include src="./views/footer.html"></include>
+<body class="o-main text-bg-dark">
+  <include src="./views/header.html"></include>
+  <main class="o-main">
+    <div class="o-grid">
+      <div class="o-grid__intro">
+        <h2>Chess Club</h2>
+      </div>
+      <div class="o-grid__title">
+        <h1>I love Chess</h1>
+      </div>
+      <div class="o-grid__join o-grid__action o-grid__action-left">
+        <a href="#"><i class="fa fa-arrow-right me-3"></i>Join the
+          Club</a>
+      </div>
+      <div class="o-grid__book o-grid__action o-grid__action-left">
+        <a href="book.html"><i class="fa fa-arrow-right me-3"></i>Book a Game</a>
+      </div>
+      <div class="o-grid__lessons o-grid__action o-grid__action-right">
+        <a href="#">Free Lessons<i class="fa fa-arrow-left ms-3"></i></a>
+      </div>
+      <div class="o-grid__about">
+        <h4>About</h4>
+        <p>We love chess. If you also are crazy about chess, join us, book a game or enter
+          our next competition. If you are a newbie, join our free lessons.</p>
+      </div>
+      <div class="o-grid__image--primary">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="assets/images/1746-chess.jpg?as=webp" type="image/webp">
+          <source media="(min-width: 640px)" srcset="assets/images/800-chess.jpg?as=webp" type="image/webp">
+          <source media="(min-width: 320px)" srcset="assets/images/400-chess.jpg?as=webp" type="image/webp">
+          <img src="assets/images/1746-chess.jpg" alt="Chess image">
+        </picture>
+      </div>
+
+      <div class="o-grid__play-join o-grid__action o-grid__action-right">
+        <a href="#">Join Next Competition<i class="fa fa-arrow-left ms-3"></i></a>
+      </div>
+      <div class="o-grid__play-loc">
+        <h5>Dublin Convention Center</h5>
+      </div>
+      <div class="o-grid__play-date">
+        2023 Jan 1st
+      </div>
+      <div class="o-grid__image--secondary">
+        <picture>
+          <source media="(min-width: 640px)" srcset="assets/images/800-prizes.jpg?as=webp" type="image/webp">
+          <source media="(min-width: 320px)" srcset="assets/images/400-prizes.jpg?as=webp" type="image/webp">
+          <img src="assets/images/800-prizes.jpg" alt="Competition Prizes">
+        </picture>
+
+      </div>
+      <div class="o-grid__dots o-grid__dots-one"></div>
+      <div class="o-grid__dots o-grid__dots-two"></div>
+      <div class="o-grid__dots o-grid__dots-three"></div>
+      <div class="o-grid__dots o-grid__dots-four"></div>
+      <div class="o-grid__dots o-grid__dots-five"></div>
+      <div class="o-grid__dots o-grid__dots-six"></div>
+      <div class="o-grid__dots o-grid__dots-seven"></div>
+    </div>
+  </main>
+  <include src="./views/footer.html" locals='{ "subclass": "o-footer-dark" }'></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
