@@ -7,19 +7,15 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  @apply bg-background;
+  @apply flex flex-col h-screen m-0 bg-background;
 }
 
 @layer base {
   h1 {
-    @apply text-6xl;
+    @apply font-caveat text-9xl text-center my-10;
   }
   h2 {
-    @apply text-xl;
+    @apply text-6xl;
   }
   h3 {
     @apply text-lg;
