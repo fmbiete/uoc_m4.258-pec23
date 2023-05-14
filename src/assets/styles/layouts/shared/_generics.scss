@@ -6,22 +6,25 @@
   box-sizing: border-box;
 }
 
-body {
-  @apply flex flex-col h-screen m-0 bg-background;
-}
-
 @layer base {
+  body {
+    @apply flex flex-col h-screen m-0 bg-background;
+  }
+
   h1 {
     @apply font-caveat text-9xl text-center my-10;
   }
+  
   h2 {
     @apply font-caveat text-6xl text-center my-5;
   }
+  
   h3 {
     @apply font-caveat text-4xl my-3;
   }
+
   a {
-    @apply text-blue-600 underline;
+    @apply text-blue-600 no-underline hover:text-blue-400;
   }
 
   hr {
