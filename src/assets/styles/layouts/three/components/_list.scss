@@ -1,0 +1,16 @@
+.o-list {
+  @apply list-none p-0;
+  counter-reset: item-li;
+
+  >li {
+    @apply relative block p-2 ps-6;
+
+    /* Custom element number */
+    &:before {
+      content: counter(item-li);
+      counter-increment: item-li;
+
+      @apply absolute h-8 w-8 left-[-1rem] text-center leading-8 border-2 border-secondary rounded-full;
+    }
+  }
+}
