@@ -17,16 +17,22 @@
     <div id="confirmation"></div>
 
     <form class="needs-validation" novalidate>
-      <div class="relative mb-3">
-        <input type="text" name="number" id="number" class="control-floating peer" required>
-        <label for="number" class="label-floating">Member Number</label>
-        <div class="invalid-feedback">Please, introduce your Member Number</div>
-      </div>
-      <div class="relative mb-3">
-        <input type="text" name="name" id="name" class="control-floating peer" required>
-        <label for="name" class="label-floating">Full Name</label>
-        <div class="invalid-feedback">Please, introduce your Full Name</div>
-      </div>
+      <include src="components/input.html">
+        {
+        "name": "number",
+        "id": "number",
+        "label": "Member Number",
+        "invalid_feedback": "Please, introduce your Member Number"
+        }
+      </include>
+      <include src="components/input.html">
+        {
+        "name": "name",
+        "id": "name",
+        "label": "Full Name",
+        "invalid_feedback": "Please, introduce your Full Name"
+        }
+      </include>
       <div class="relative mb-3">
         <select name="select" id="select" class="control-floating peer" required>
           <option value="">Select Game Type</option>
@@ -37,11 +43,14 @@
         <label for="select" class="label-floating">Game Type</label>
         <div class="invalid-feedback">Please, select the desired Game Type</div>
       </div>
-      <div class="relative mb-3">
-        <input type="text" name="days" id="days" class="control-floating peer" required>
-        <label for="days" class="label-floating">Preferred Days</label>
-        <div class="invalid-feedback">Please, select up to 3 days</div>
-      </div>
+      <include src="components/input.html">
+        {
+        "name": "days",
+        "id": "Days",
+        "label": "Up to 3 Preferred Days",
+        "invalid_feedback": "Please, select up to 3 Preferred Days"
+        }
+      </include>
       <div class="mb-3">
         <input type="checkbox" name="confirm" id="confirm" class="form-checkbox rounded me-3 peer" required>
         <label for="confirm">I authorize Club management to contact me to arrange the
