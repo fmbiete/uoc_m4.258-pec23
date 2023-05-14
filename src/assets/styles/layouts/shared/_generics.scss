@@ -12,19 +12,19 @@
   }
 
   main {
-    @apply w-3/4 mx-auto;
+    @apply w-11/12 md:w-3/4 mx-auto;
   }
 
   h1 {
-    @apply font-caveat text-9xl text-center my-10;
+    @apply font-caveat font-bold text-4xl md:text-9xl text-center my-5 md:my-10;
   }
   
   h2 {
-    @apply font-caveat text-6xl text-center my-5;
+    @apply font-caveat font-bold text-6xl text-center my-5;
   }
   
   h3 {
-    @apply font-caveat text-4xl my-3;
+    @apply font-caveat font-bold text-4xl my-3;
   }
 
   a {
