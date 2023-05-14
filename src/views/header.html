@@ -1,25 +1,46 @@
-<header class="sticky top-0 bg-white z-50 flex md:flex-row">
-  <a class="flex flex-row m-5 items-center no-underline text-black" href="index.html">
-    <img class="max-w-[80px] mx-5" src="assets/images/logo.svg" alt="I Love Chess - Logo">
-    <h1 class="font-sans my-0 text-6xl font-extrabold">I Love Chess</h1>
-  </a>
-  <nav class="grow">
-    <ul class="flex flex-column md:flex-row justify-center md:justify-end mt-5">
-      <li class="me-5">
-        <a href="two.html">Club Members</a>
-      </li>
-      <li class="me-5">
-        <a href="three.html">Club Information</a>
-      </li>
-      <li class="me-5">
-        <a href="carousel.html">Photo Gallery</a>
-      </li>
-      <li class="me-5">
-        <a href="book.html">Book a Game</a>
-      </li>
-      <li class="me-5">
-        <a href="play.html">Play a Game</a>
-      </li>
-    </ul>
+<header class="sticky top-0 z-50 flex md:flex-row">
+  <nav class="bg-white w-full">
+    <div class="mx-auto px-4">
+      <div class="flex justify-between">
+        <div>
+          <a href="index.html" class="flex items-center py-4 px-2">
+            <img src="assets/images/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
+            <span class="text-4xl md:text-6xl text-black font-bold">I Love Chess</span>
+          </a>
+        </div>
+        <!-- Primary Navbar items -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a class="menu-desktop-item" href="two.html">Club Members</a>
+          <a class="menu-desktop-item" href="three.html">Club Information</a>
+          <a class="menu-desktop-item" href="carousel.html">Photo Gallery</a>
+          <a class="menu-desktop-item" href="book.html">Book a Game</a>
+          <a class="menu-desktop-item" href="play.html">Play a Game</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-black text-4xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="menu-mobile-item"><a href="two.html">Club Members</a></li>
+        <li class="menu-mobile-item"><a href="three.html">Club Information</a></li>
+        <li class="menu-mobile-item"><a href="carousel.html">Photo Gallery</a></li>
+        <li class="menu-mobile-item"><a href="book.html">Book a Game</a></li>
+        <li class="menu-mobile-item"><a href="play.html">Play a Game</a></li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.getElementById("mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </nav>
 </header>

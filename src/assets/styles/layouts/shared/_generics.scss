@@ -64,4 +64,12 @@
   .btn-secondary {
     @apply bg-gray-200;
   }
+
+  .menu-desktop-item {
+    @apply py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300 ;
+  }
+
+  .menu-mobile-item {
+    @apply block text-lg px-2 py-4 hover:bg-green-500 transition duration-300;
+  }
 }
