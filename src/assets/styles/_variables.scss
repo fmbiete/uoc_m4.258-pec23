@@ -1,20 +1,4 @@
 @use "sass:color";
 
-// Override theme colors
-$theme-colors: (
-  "primary":#563d7c,
-  "secondary":#868e96,
-  "success":#28a745,
-  "danger":#dc3545,
-  "info":#17a2b8,
-  "warning":#ffc107,
-  "light":#f8f9fa,
-  "dark":#343434
-);
-
-// Override background and color for body
+// Override background for body
 $body-bg: color.scale(#73edff, $lightness: 70%);
-$body-color: #000078;
-
-// Override input controls background (uses body-bg as default)
-$input-bg: #f8f9fa;
