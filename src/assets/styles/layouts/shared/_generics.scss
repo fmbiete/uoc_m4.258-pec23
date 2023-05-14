@@ -11,6 +11,10 @@
     @apply flex flex-col h-screen m-0 bg-background;
   }
 
+  main {
+    @apply w-3/4 mx-auto;
+  }
+
   h1 {
     @apply font-caveat text-9xl text-center my-10;
   }
