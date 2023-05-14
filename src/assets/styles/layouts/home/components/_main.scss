@@ -3,20 +3,17 @@
 \*------------------------------------*/
 
 .o-main {
-  margin: auto;
+  @apply m-auto;
+  // margin: auto;
 }
 
 .o-grid {
-  margin: 100;
-  max-width: 1000px;
-
-  display: grid;
+  @apply m-auto max-w-[1000px] grid items-center gap-2.5 font-black;
   
   grid-template-columns: 1fr 2fr 2fr 1fr 2fr 2fr 2fr;
   // Not supported in most browsers
   // grid-template-rows: masonry;
   grid-template-rows: repeat(8, max-content);
-  grid-gap: 10px;
   grid-template-areas: 
     "dots1  dots1  intro    intro    dots6   lessons lessons"
     "dots1  dots1  dots7    title    title   title   dots2"
@@ -27,23 +24,18 @@
     "imgpri imgpri imgpri   dots5    imgsec  imgsec  imgsec"
     "dots4  playjoin  playjoin playjoin playloc playloc playdate"
   ;
-  align-items: center;
-
-  font-weight: 900;
 
   > * {
-    min-width: 0px;
+    @apply min-w-0;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .o-grid {
-    margin: 10px;
+    @apply mt-[10px] gap-0 gap-x-[10px];
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, max-content);
-    grid-gap: 0;
-    grid-column-gap: 10px;
     grid-template-areas: 
     "dots1 dots1 lessons lessons"
     "dots2 intro intro dots3"
@@ -70,8 +62,7 @@
   overflow: hidden;
 
   img {
-    width: 100%;
-    height: 100%;
+    @apply w-full h-full;
   }
 }
 
@@ -89,10 +80,6 @@
 .o-grid__intro {
   grid-area: intro;
   text-align: left;
-
-  h2 {
-    font-weight: 900;
-  }
 }
 
 .o-grid__title {
@@ -100,7 +87,6 @@
   text-align: right;
   
   h1 {
-    font-weight: 900;
     text-transform: uppercase;
   }
 }
@@ -111,11 +97,7 @@
 
 .o-grid__about {
   grid-area: about;
-  font-weight: 300;
-
-  h4 {
-    font-weight: 900;
-  }
+  @apply font-light;
 }
 
 .o-grid__dots {
@@ -158,11 +140,6 @@
 .o-grid__play-loc {
   grid-area: playloc;
   text-align: right;
-
-  h5 {
-    // We need to override bootstrap defaults
-    font-weight: 600;
-  }
 }
 
 .o-grid__action {
